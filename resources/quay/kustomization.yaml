@@ -8,6 +8,7 @@ resources:
 - 01_openshift-local-storage-og.yaml
 - 02_local-storage-operator-subscription.yaml
 - 02_quay-operator.subscription.yaml
+- 02_quay-bridge_subscription.yaml
 - 03_noobaa.yaml
 - 04_noobaa-pv-backing-store.yaml
 - 05_quay-registry.yaml
