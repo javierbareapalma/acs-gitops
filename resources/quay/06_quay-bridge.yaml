@@ -1,6 +1,8 @@
 apiVersion: quay.redhat.com/v1
 kind: QuayIntegration
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "6"
   name: quay-bridge
 spec:
   credentialsSecret:
