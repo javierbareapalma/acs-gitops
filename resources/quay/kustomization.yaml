@@ -12,3 +12,5 @@ resources:
 - 03_noobaa.yaml
 - 04_noobaa-pv-backing-store.yaml
 - 05_quay-registry.yaml
+- 05_quay-registry_secret.yaml
+- 06_quay-bridge.yaml

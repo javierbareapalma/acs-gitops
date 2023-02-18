@@ -1,0 +1,12 @@
+apiVersion: quay.redhat.com/v1
+kind: QuayIntegration
+metadata:
+  name: quay-bridge
+spec:
+  credentialsSecret:
+    name: quay-credentials
+    namespace: openshift-operators
+  clusterID: openshift
+  insecureRegistry: true
+  quayHostname: >-
+    https://quay-registry-quay-quay-registry.apps.cluster-w5n52.w5n52.sandbox419.opentlc.com
