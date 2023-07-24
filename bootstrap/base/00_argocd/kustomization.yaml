@@ -3,8 +3,6 @@ kind: Kustomization
 commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 resources:
-- 00_argocd
-- 01_acs
-- 02_acm
-- 03_policy01
-- 04_policy02
+  - 00_argocd_namespace.yaml
+  - 01_argocd_subscription.yaml
+  - 02_argocd_rbac.yaml
