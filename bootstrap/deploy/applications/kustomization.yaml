@@ -1,4 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- rhacs-app.yaml
+- 00_rhacs-app.yaml
+- 01_policy-01.yaml
+- 02_policy-02.yaml

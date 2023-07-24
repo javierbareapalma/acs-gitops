@@ -9,9 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: resources/rhacs
+    path: resources/policy
     repoURL: 'https://github.com/ignaciolago/acs-gitops.git'
-    targetRevision: main
+    targetRevision: policy
   syncPolicy:
     automated:
       prune: true
