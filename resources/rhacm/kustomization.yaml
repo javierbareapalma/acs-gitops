@@ -4,9 +4,9 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 resources:
 - 00_namespace.yaml
-- 01_multiclusterhub.yaml
-- 02_operatorgroup.yaml
-- 03_subscriptionacm.yaml
+- 03_multiclusterhub.yaml
+- 01_operatorgroup.yaml
+- 02_subscriptionacm.yaml
 - 04_gitopscluster.yaml
 - 05_managedclusterset.yaml
 - 06_managedclustersetbinding.yaml
