@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: resources/policy
+    path: resources/policy-01
     repoURL: 'https://github.com/ignaciolago/acs-gitops.git'
     targetRevision: policy
   syncPolicy:
