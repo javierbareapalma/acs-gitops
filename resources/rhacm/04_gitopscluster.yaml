@@ -4,7 +4,7 @@ kind: GitOpsCluster
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "3"
-  name: gitops-acm-importer
+  name: gitops-clusters
   namespace: openshift-gitops
 spec:
   argoServer:
