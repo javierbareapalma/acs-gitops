@@ -32,7 +32,7 @@ spec:
         metadata:
           name: comp-operator-operator-group
         spec:
-          remediationAction: inform
+          remediationAction: enforce
           severity: high
           object-templates:
             - complianceType: musthave
@@ -51,7 +51,7 @@ spec:
         metadata:
           name: comp-operator-subscription
         spec:
-          remediationAction: inform
+          remediationAction: enforce
           severity: high
           object-templates:
             - complianceType: musthave
@@ -72,7 +72,7 @@ spec:
         metadata:
           name: comp-operator-status
         spec:
-          remediationAction: inform
+          remediationAction: enforce
           severity: high
           object-templates:
             - complianceType: musthave
