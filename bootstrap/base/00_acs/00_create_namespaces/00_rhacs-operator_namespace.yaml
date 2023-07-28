@@ -1,8 +1,7 @@
-# ACM hub cluster namespace
----
 apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
-  name: open-cluster-management
+  name: rhacs-operator
+spec: {}
