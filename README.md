@@ -163,7 +163,7 @@ export AWSKEY= <YOURACCESSKEY>
 
 export AWSSECRETKEY= <YOURSECRETKEY>
 
-export REGION= us-west-1
+export REGION= eu-west-1
 
 mkdir $HOME/.aws
 
@@ -181,7 +181,7 @@ aws sts get-caller-identity
 
 ### Install the cluster using the CLI:
 
-eksctl create cluster --name my-cluster --region us-east-2 --version 1.23
+eksctl create cluster --name my-cluster --region eu-west-1 --version 1.23
 
 oc config get-contexts 
 
