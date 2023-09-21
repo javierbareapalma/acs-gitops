@@ -11,7 +11,7 @@ spec:
   source:
     path: resources/rhacs
     repoURL: 'https://github.com/ignaciolago/acs-gitops.git'
-    targetRevision: main
+    targetRevision: policy
   syncPolicy:
     automated:
       prune: true
