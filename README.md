@@ -183,10 +183,14 @@ aws sts get-caller-identity
 
 eksctl create cluster --name my-cluster --region eu-west-1 --version 1.27
 
+### We get the context to log in to the cluster:
+
 oc config get-contexts 
 
-oc config use-context open-environment-hkmjg-admin@my-cluster.us-east-2.eksctl.io
+oc config use-context open-environment-hkmjg-admin@my-cluster.eu-west-1.eksctl.io
 
-aws eks get-token --cluster-name open-environment-tc6vh-admin@eks-demo.us-east-2.eksctl.io|jq
+aws eks get-token --cluster-name open-environment-tc6vh-admin@eks-demo.eu-west-1.eksctl.io|jq
 
-$ eksctl delete cluster demo-eks-cluster-primary --region us-east-2 
+### And finally we can delete the cluster:
+
+$ eksctl delete cluster demo-eks-cluster-primary --region eu-west-12 
