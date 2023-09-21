@@ -158,11 +158,12 @@ spec:
 
 ## Install EKS cluster
 ### Pre-Requisites:
-export AWSKEY=<YOURACCESSKEY>
 
-export AWSSECRETKEY=<YOURSECRETKEY>
+export AWSKEY= <YOURACCESSKEY>
 
-export REGION=us-west-1
+export AWSSECRETKEY= <YOURSECRETKEY>
+
+export REGION= us-west-1
 
 mkdir $HOME/.aws
 
