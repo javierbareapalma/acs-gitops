@@ -181,7 +181,7 @@ aws sts get-caller-identity
 
 ### Install the cluster using the CLI:
 
-eksctl create cluster --name my-cluster --region eu-west-1 --version 1.23
+eksctl create cluster --name my-cluster --region eu-west-1 --version 1.27
 
 oc config get-contexts 
 
