@@ -152,5 +152,30 @@ spec:
 ```
 ### We wait for it to import
 ![Imported Cluster](./resources/images/image7.png)
-
 ## and we are DONE!
+
+# WIP
+
+## Install EKS cluster
+### Pre-Requisites:
+export AWSKEY=<YOURACCESSKEY>
+export AWSSECRETKEY=<YOURSECRETKEY>
+export REGION=us-west-1
+
+mkdir $HOME/.aws
+cat << EOF >> $HOME/.aws/credentials
+[default]
+aws_access_key_id = ${AWSKEY}
+aws_secret_access_key = ${AWSSECRETKEY}
+region = $REGION
+EOF
+aws sts get-caller-identity 
+
+
+### Install the cluster using the CLI:
+
+eksctl create cluster --name my-cluster --region us-east-2 --version 1.23
+oc config get-contexts 
+oc config use-context open-environment-hkmjg-admin@my-cluster.us-east-2.eksctl.io
+aws eks get-token --cluster-name open-environment-tc6vh-admin@eks-demo.us-east-2.eksctl.io|jq
+$ eksctl delete cluster demo-eks-cluster-primary --region us-east-2 
