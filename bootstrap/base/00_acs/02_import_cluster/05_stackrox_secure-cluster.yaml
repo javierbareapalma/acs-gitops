@@ -11,7 +11,7 @@ spec:
     listenOnEvents: true
     listenOnUpdates: true
   clusterName: local-cluster
-  centralEndpoint: "central.stackrox.svc:443"
+  centralEndpoint: "central.stackrox.svc:443"  ##Only if you are installing secured cluster services and Central in the same cluster 
   perNode:
     collector:
       collection: EBPF
