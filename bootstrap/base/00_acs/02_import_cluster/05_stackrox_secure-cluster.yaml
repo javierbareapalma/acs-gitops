@@ -11,8 +11,9 @@ spec:
     listenOnEvents: true
     listenOnUpdates: true
   clusterName: local-cluster
+  centralEndpoint: "central.stackrox.svc:443"
   perNode:
     collector:
-      collection: KernelModule
+      collection: EBPF
       imageFlavor: Regular
     taintToleration: TolerateTaints
