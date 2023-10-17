@@ -6,14 +6,3 @@ metadata:
     argocd.argoproj.io/sync-wave: "0"
  name: stackrox
 spec: {}
----
-kind: Secret
-apiVersion: v1
-metadata:
-  name: acs-password
-  namespace: stackrox
-  annotations:
-    argocd.argoproj.io/sync-wave: "2"
-data:
-  password: cmVkaGF0MDE=
-type: Opaque
